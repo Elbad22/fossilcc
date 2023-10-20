@@ -39,7 +39,7 @@ if(!isBanned($userId) && !isMuted($userId)){
     addUser($userId);
     bot('sendmessage',[
         'chat_id'=>$chat_id,
-        'text'=>"<b>Hello @$username,
+        'text'=>"<b>Hi @$username,
 
 Type /cmds to know all my commands!</b>
 
@@ -48,10 +48,10 @@ $messagesec",
 	'reply_to_message_id'=> $message_id,
     'reply_markup'=>json_encode(['inline_keyboard' => [
         [
-          ['text' => "💠 Created By 💠", 'url' => "t.me/iamNVN"]
+          ['text' => "💠 Created By 💠", 'url' => "t.me/FossilCC_bot"]
         ],
         [
-          ['text' => "💎 Source Code 💎", 'url' => "GitHub.com/iam-NVN/SDMN_CheckerBot"]
+          ['text' => "💎 Source Code 💎", 'url' => "github.com/Elbad22/fossilcc.git"]
         ],
       ], 'resize_keyboard' => true])
         
